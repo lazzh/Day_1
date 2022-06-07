@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <style>
+      .center {
+        margin: auto;
+        width: 35%;
+        border: 4px solid blue;
+        padding: 10px;
+        padding-bottom: 3%;
+        background-color: whitesmoke;
+        padding-right: 8%;
+      }
+      .form {
+        margin: auto;
+        width: 35%;
+      }
+      .button {
+        background-color: blue;
+        border: none;
+        color: whitesmoke;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+        margin: 4px 2px;
+        border-radius: 18px;
+        width: 60%;
+      }
+
+      .button:hover,
+      .button:active {
+        background: lightblue;
+        border-color: lightblue;
+      }
+
+      .button:focus {
+        outline: none;
+      }
+      .form input {
+        margin: 1rem auto;
+        padding: 1rem;
+        width: 150%;
+        border-radius: 25px;
+        border-color: blue;
+        border: 2px solid blue;
+      }
+      .form input:focus {
+        outline: none;
+        border-color: green;
+      }
+      .form h1 {
+        color: darkblue;
+        text-align: center;
+        font-size: 24px;
+      }
+      .form label {
+        font-size: 0.5cm;
+        font-weight: bold;
+        color: darkblue;
+        padding-left: 5%;
+        width: 40%;
+      }
+      .checkboxes {
+        margin: auto;
+        padding: 0rem;
+        width: 70%;
+      }
+      /* body {
+      background-size: cover;
+      background-image: url("file:///Users/qadeerashraf/Desktop/ucp.jpeg");
+    } */
+    </style>
+  </head>
+<body>
+  <div class="center"> 
+    <form class="form">
+        <h1>Survey form</h1><br><br>
+        <label>Student Name</label>
+        <input type="text" name="UserName" size=35 maxlength=35 value="" />
+        <label>Department name</label>
+        <input type="text" name="Deptt" size=35 maxlength=35 value="" />
+        </br></br>
+        Tell us about yourself
+        <textarea name="Comments" cols=30 rows=4></textarea></br></br>
+        Do you exercise at home?<br><br>
+        <select name="exercise-place" ><option>
+            <option value=1 selected = "true">No</option>
+            <option value=2 >Yes</option>
+        </select>
+        <br><br>
+        How do you like to read about your favorite topics?
+        <div class="checkboxes">
+            <input type="checkbox" name="Books" >Books</input>
+            <input type="checkbox" name="Web"  >Online resources</input>
+            <input type="checkbox" name="Phone" >Phone apps</input>
+            <input type="checkbox" name="Magazines">Magazines</input>
+        </div>
+        <br><br>
+        What genre of movies do you like?
+        <br><br>
+        <select name="moviepref">
+            <option value=1 selected = "true">comedy</option>
+            <option value=2 >romance</option>
+            <option value=3 >thriller</option>
+            <option value=4 >horror</option>
+            <option value=5 >biopic</option>
+        </select>
+        <input class="button" type=submit value="Submit form">
+    </form>
+  </div>   
+</body>
+</html>
